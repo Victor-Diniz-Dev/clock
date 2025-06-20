@@ -17,6 +17,9 @@ def get_date():
     data_atual =strftime('%a, %d %b %Y')
     date.config(text=data_atual)
 
+margem = tk.Canvas(root, width=600, height=60, bg='#1D1D1D', bd=0, highlightthickness=0, relief='ridge')
+margem.pack()
+
 hello = Label(root, bg='#1D1D1D', fg='#8E27EA', font=('Montserrat', 16))
 hello.pack()
 
