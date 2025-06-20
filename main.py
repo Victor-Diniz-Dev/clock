@@ -5,14 +5,14 @@ from time import strftime
 
 root = tk.Tk()
 root.title('Clock')
-root.geometry("600x320")
+root.geometry("600x320+700+300")
 root.maxsize(600, 320)
 root.minsize(600,320)
 root.configure(background= '#1D1D1D')
 
 def get_hello():
     nome = os.getlogin()
-    hello.config(text=f'Olá, {nome}@')
+    hello.config(text=f'Olá, {nome}!')
 def get_date():
     data_atual = strftime('%a, %d %b %Y')
     date.config(text=data_atual)
